@@ -31,8 +31,8 @@ This service provides an API to interact with and manage all of my pets 🐱
 
 ### Local execution
 
-   > cd backend
-     python src/main.py
+   `cd backend`
+   >  python src/main.py
 
 ### With Docker
 
