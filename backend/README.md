@@ -16,7 +16,7 @@ This service provides an API to interact with and manage all of my pets 🐱
 1. Set up python virtual environment
 
    > cd backend
-     python3.11 -m venv env
+   > python3.11 -m venv env
 
 2. Activate the virtual environment
    > source env/bin/activate
@@ -60,16 +60,17 @@ Run the app and head to
 
 ### Further development
 
-- [ ] This current Flask service is only meant for development. Use a production-ready WSGI Server like Gunicorn or uWSGI.
+- [ ] This current Flask service is only meant for development. Use a production-ready WSGI Server like Gunicorn or uWSGI
 - [ ] Set up database persistence layer
-- [ ] Write unit tests
+- [ ] Write unit & integration tests
+- [ ] Set up linting, static code analysis
 - [ ] Automate creation of openapi spec
 
 ### Security 
 
-- [ ] Ensure proper secrets management 
+- [ ] Implement user authentication & RBAC (JWT)
+- [ ] Ensure proper secrets management
 - [ ] Use HTTPS to encrypt data between client and server (set up SSL/TLS certificates and config)
-- [ ] Implement authentication & RBAC (JWT)
 - [ ] Keep dependencies up to date (ex: github dependabot)
 
 ### Deployment
@@ -80,5 +81,6 @@ Run the app and head to
    3. Run unit tests
    4. Build and push image to image repo (ex: AWS ECR)
    5. Deploy image to AWS (ECS, EKS)
+      Dev environment => run integration tests => deploy to later stages / Prod environment
 - [ ] Set up logging and monitoring - ex: ELK stack (Elasticsearch, Logstash, Kibana), Prometheus, and Grafana
 - [ ] Orchestration with Kubernetes for scalability and management
