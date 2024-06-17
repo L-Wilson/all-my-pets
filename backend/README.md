@@ -13,9 +13,8 @@ This service provides an API to interact with and manage all of my pets 🐱
 
 ### Setting up the local development environment
 
-1. Set up python virtual environment
+1. Set up python virtual environment `cd backend`
 
-   > cd backend
    > python3.11 -m venv env
 
 2. Activate the virtual environment
