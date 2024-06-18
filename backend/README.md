@@ -61,6 +61,7 @@ Run the app and head to
 
 - [ ] This current Flask service is only meant for development. Use a production-ready WSGI Server like Gunicorn or uWSGI
 - [ ] Set up database persistence layer
+- [ ] API versioning 
 - [ ] Write unit & integration tests
 - [ ] Set up linting, static code analysis
 - [ ] Automate creation of openapi spec
@@ -70,6 +71,7 @@ Run the app and head to
 - [ ] Implement user authentication & RBAC (JWT)
 - [ ] Ensure proper secrets management
 - [ ] Use HTTPS to encrypt data between client and server (set up SSL/TLS certificates and config)
+- [ ] Server-side input validation
 - [ ] Keep dependencies up to date (ex: github dependabot)
 
 ### Deployment
@@ -81,5 +83,9 @@ Run the app and head to
    4. Build and push image to image repo (ex: AWS ECR)
    5. Deploy image to AWS (ECS, EKS)
       Dev environment => run integration tests => deploy to later stages / Prod environment
-- [ ] Set up logging and monitoring - ex: ELK stack (Elasticsearch, Logstash, Kibana), Prometheus, and Grafana
+- [ ] Set up logging and monitoring - ex: AWS Cloudwatch, ELK stack (Elasticsearch, Logstash, Kibana), Prometheus, and Grafana
 - [ ] Orchestration with Kubernetes for scalability and management
+
+### Infrastructure considerations
+
+- [ ] API Gateway (access control, response caching, response types, request throttling, data handling, identifying the right destinations based on custom rules, seamless scaling the backend)
